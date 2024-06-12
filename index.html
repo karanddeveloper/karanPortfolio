@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="content">
+            <h1>Hello, I'm Karan</h1>
+            <p>Driven fresher seeking opportunity as </p> <p class="bold">Software / Web Developer</p><br>
+            <a href="mailto:karanddeveloper@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: #000000; font-size: 30px;"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100010239576135&mibextid=vk8aRt" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000; font-size: 30px;"></i></a>
+            <a href="https://github.com/karanddeveloper" target="_blank"><i class="fa-brands fa-github" style="color: #000000; font-size: 30px;"></i></a>
+            <a href="http://www.linkedin.com/in/karan-d-556616312" target="_blank"><i class="fa-brands fa-linkedin" style="color: #000000; font-size: 30px;"></i></a><br>
+            <a href="\asset\Karan D Resume .pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="image">
+            <img src="\asset\Karan image rounded.png" alt="Karan's Image">
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="image">
+            <img src="\asset\Karan image ps.png" alt="Karan's Image">
+        </div>
+        
+        <div class="content">
+            <h1>About Me</h1><br>
+            <p>
+                I am Karan. D, a recent MCA graduate with a passion for both web and software development and a solid technical skill set including Java, HTML, CSS, JavaScript, and PHP. My internship experience with WordPress CMS allowed me to develop a comprehensive project, showcasing my ability to build engaging and functional websites. I am eager to apply my knowledge and skills in a dynamic work environment, contributing to cutting-edge web development projects and continuous learning.
+            </p>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+        <h1>Skills I Have</h1>
+        <div class="skills-container">
+            <div class="skill-item"><img src="\asset\html.png" alt="Skill 1"></div>
+            <div class="skill-item"><img src="\asset\css.png" alt="Skill 2"></div>
+            <div class="skill-item"><img src="\asset\javascript.png" alt="Skill 3"></div>
+            <div class="skill-item"><img src="\asset\java.png" alt="Skill 4"></div>
+            <div class="skill-item"><img src="\asset\php.png" alt="Skill 5"></div>
+            <div class="skill-item"><img src="\asset\wordpress.png" alt="Skill 6"></div>
+        </div>
+        <table class="skills-table">
+            <tr>
+                <th>Technology</th>
+                <th>Used In</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>In Projects</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>In Projects</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>In Projects</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>In Semester</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>In Projects</td>
+            </tr>
+            <tr>
+                <td>WordPress</td>
+                <td>In Internship</td>
+            </tr>
+        </table>
+    </section>
+    <section id="projects" class="projects-section">
+        <h1>Projects Section</h1>
+        <div class="button-container">
+            <a href="https://static-try-1-1zt1l.kinsta.page/" target="_blank" class="btn">Business Card</a>
+            <a href="https://static-try-2-yowsv.kinsta.page/" target="_blank" class="btn">Hotel Menu</a>
+            <a href="https://test-1-qkrro.kinsta.page/" target="_blank" class="btn">To-Do List</a>
+            <a href="https://github.com/karanddeveloper/Hackon/tree/main/screenshots" target="_blank" class="btn">Hackon Project</a>
+            <a href="https://github.com/karanddeveloper/mini_project/tree/main/screenshots" target="_blank" class="btn">Mini-Project</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <small class="error-message" id="fullNameError"></small>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error-message" id="emailError"></small>
+    
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                <small class="error-message" id="mobileNumberError"></small>
+    
+                <label for="emailSubject">Subject</label>
+                <input type="text" id="emailSubject" name="emailSubject" required>
+                <small class="error-message" id="emailSubjectError"></small>
+    
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <small class="error-message" id="messageError"></small>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
